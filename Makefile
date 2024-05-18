@@ -1324,7 +1324,7 @@ quiet_cmd_autoksyms_h = GEN     $@
       cmd_autoksyms_h = mkdir -p $(dir $@); \
 			$(CONFIG_SHELL) $(srctree)/scripts/gen_autoksyms.sh $@
 
-#$(autoksyms_h):
+$(autoksyms_h):
 #	$(call cmd,autoksyms_h)
 
 ARCH_POSTLINK := $(wildcard $(srctree)/arch/$(SRCARCH)/Makefile.postlink)
